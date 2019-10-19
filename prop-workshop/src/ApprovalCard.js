@@ -3,9 +3,10 @@ import CommentDetail from "./CommentDetail";
 import faker from "faker";
 
 const ApprovalCard = props => {
-  return (
+   return (
     <div className="ui card">
       <div className="content">
+        {props.children}
         <div className="extra content">
           <div className="ui two buttons">
             <div className="ui basic green button">Approve </div>
