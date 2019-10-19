@@ -6,6 +6,7 @@ import ApprovalCard from "./ApprovalCard";
 const App = () => {
   return (
     <div className="ui container comments">
+      <ApprovalCard />
       <CommentDetail
         authorAvatar={faker.image.avatar()}
         author="Sam"
