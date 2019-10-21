@@ -18,6 +18,14 @@ class App extends React.Component {
       }
     );
   }
+
+  componentDidMount(){
+      console.log("my component was rendered on the screen")
+  }
+
+  componentDidUpdate(){
+      console.log("my component was just updated, it re-rendered")
+  }
   render() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div> Error: {this.state.errorMessage}</div>;
